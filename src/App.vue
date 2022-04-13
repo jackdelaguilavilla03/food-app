@@ -22,7 +22,6 @@
 
 <script>
 // @ is an alias to /src
-//import @HomeView  from 
 
 </script>
 <style lang="less">
