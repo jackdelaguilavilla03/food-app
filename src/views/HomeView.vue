@@ -19,9 +19,12 @@
 						</div>
 						<div class="scroll-main"> 
 								<div class="scroll-content">
-										<div class="avatar">
+										<div :key="index" class="avatar" v-for="(item, index) in 10">
+												<box-icon type='solid' name='pizza' color='orange'></box-icon>
 										</div>
 								</div>
+						</div>
+						<div clas="">
 						</div>
 				</div>
   </div>
@@ -41,6 +44,18 @@ export default {
 
 .home {
 		margin: 20px;
+		.scroll-main {
+				.scroll-content {
+						padding: 20px;
+						display: flex;
+						overflow-y: auto;
+						.avatar {
+								background-color: #f9f9f9;
+								padding: 20px;
+								border-radius: 10px;
+						}
+				}
+		}
 }
 .header {
 		.scroll-main {}
